@@ -39,4 +39,4 @@ jobs:
     steps:
       - name: run command
         run:
-          echo "Doing test...${{ needs.lint.outputs.status}}"
+          echo "Doing the test...${{ needs.lint.outputs.status}}"
