@@ -22,12 +22,12 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout
+        uses: actions/checkout@v4
       
       - name: run command
         id: export
         run:
-          echo "this is a output"
+          echo "Status=Complete" >> "$GITHUB_OUTPUT"
   
   test:
     name: test
